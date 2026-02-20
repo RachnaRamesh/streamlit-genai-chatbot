@@ -1,0 +1,7 @@
+1. User query 
+2. Display user query
+3. Save query to chat history
+4. Send chat history to llm 
+5. Get response from llm
+6. Save response in chat history
+7. Display llm response
