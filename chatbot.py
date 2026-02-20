@@ -37,7 +37,7 @@ header, footer {
     background: transparent !important;
 }
 
-/* TITLE — MOVE UP */
+/* TITLE */
 .title {
     margin-top: 0px;
     margin-bottom: 12px;
@@ -49,7 +49,6 @@ header, footer {
 /* USER BUBBLE */
 [data-testid="stChatMessage"]:has(div[data-testid="chatAvatarIcon-user"]) {
     background: #ffc2d1;
-    color: black !important;
     border-radius: 22px;
     padding: 14px 18px;
     margin: 8px 0;
@@ -58,14 +57,14 @@ header, footer {
 /* ASSISTANT BUBBLE */
 [data-testid="stChatMessage"]:has(div[data-testid="chatAvatarIcon-assistant"]) {
     background: #ffeaf1;
-    color: black !important;
     border-radius: 22px;
     padding: 14px 18px;
     margin: 8px 0;
 }
 
-/* FORCE TEXT BLACK */
-[data-testid="stChatMessage"] p {
+/* 🖤 FORCE ALL CHAT TEXT BLACK */
+[data-testid="stChatMessage"],
+[data-testid="stChatMessage"] * {
     color: black !important;
 }
 
@@ -74,10 +73,10 @@ header, footer {
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 2px;
-    color: #ff4d88;
+    color: #ff4d88 !important;
 }
 
-/* INPUT BAR */
+/* 🌺 INPUT BAR */
 .stChatFloatingInputContainer {
     background: linear-gradient(135deg, #ff8fb1, #ff6f9f);
     border-top: none;
@@ -89,18 +88,18 @@ header, footer {
     border: 2px solid rgba(255,255,255,0.4);
 }
 
-/* INPUT TEXT WHITE */
-textarea {
+/* 🤍 INPUT TEXT WHITE ONLY */
+.stChatInputContainer textarea {
     color: white !important;
 }
 
-textarea::placeholder {
+/* PLACEHOLDER WHITE */
+.stChatInputContainer textarea::placeholder {
     color: rgba(255,255,255,0.85) !important;
 }
 
 </style>
 """, unsafe_allow_html=True)
-
 # ========= TITLE =========
 st.markdown('<div class="title">Chatty - Your AI Companion</div>', unsafe_allow_html=True)
 
